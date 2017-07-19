@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Firebase</title>
+
+</head>
+
+<body>
+
+  <header>
+    <h1 id="h1">Firebase Database Basics</h1>
+  </header>
+
+
+
+    <button type="button" id="sign-in-button">Google Sign In</button>
+    <button type="button" id="sign-out-button">Sign Out</button>
+
+    <form name="form">
+      <label for="text">Label</label>
+      <input type="text" name="text" id="text" placeholder="placeholder">
+
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="form-output" style="display: none"></div>
+
+    <script>
+      var form_output = document.querySelector("#form-output");
+
+      document.form.addEventListener("submit", function(event) {
+        // note: form.elements.text.value seems to equal form.text.value!?
+        // where is that documented?
+        console.log("Saving value", form.text.value);
+
+        form_output.innerHTML = form.text.value;
+        form_output.style.display = "block";
+
+        addEntry(form.text.value);
+
+        event.preventDefault();
+      });
+
+      document.form.addEventListener("reset", function(event) {
+        console.log("Resetting form");
+        form_output.style.display = "none";
+        form_output.innerHTML = "";
+      });
+    </script>
+
+    <div id="firebase-output" style="display: none"></div>
+    <div id="firebase-auth" style="display: none"></div>
+
+
+  <!-- <footer>
+    <br>
+    <a href="https://validator.w3.org/check?uri=referer&showsource=yes&showoutline=yes">Nu HTML Checker</a>
+    <br>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">CSS Validation Service</a>
+    <br>
+    <a href="https://validator.w3.org/unicorn/check?ucn_uri=referer&ucn_task=conformance" title="HTML+CSS+RSS">Unicorn Unified Validator</a>
+  </footer> -->
+
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAH-UqLf5Juqdk0FBMX61vWR-tkggSbe6E",
+      authDomain: "spencermathews-b8221.firebaseapp.com",
+      databaseURL: "https://spencermathews-b8221.firebaseio.com",
+      storageBucket: "spencermathews-b8221.appspot.com",
+      messagingSenderId: "563445910211"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

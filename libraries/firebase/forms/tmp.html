@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Firebase Web Quickstart</title>
+
+</head>
+
+<body>
+
+  <h1 id="bigOne"></h1>
+
+  <div id="form_output" style="display: none"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAH-UqLf5Juqdk0FBMX61vWR-tkggSbe6E",
+      authDomain: "spencermathews-b8221.firebaseapp.com",
+      databaseURL: "https://spencermathews-b8221.firebaseio.com",
+      storageBucket: "spencermathews-b8221.appspot.com",
+      messagingSenderId: "563445910211"
+    };
+    firebase.initializeApp(config);
+
+
+    var bigOne = document.getElementById('bigOne');
+    var dbRef = firebase.database().ref().child('text');
+    dbRef.on('value', snap => bigOne.innerText = snap.key + ': ' + snap.val());
+
+    dbRef.set('set');
+
+    // several equivalent ways to set values, reference is created if needed
+    firebase.database().ref('ref-set').set('yo');
+    
+    firebase.database().ref().child('ref-child').set('yo');
+
+
+
+
+  </script>
+</body>
+
+</html>
