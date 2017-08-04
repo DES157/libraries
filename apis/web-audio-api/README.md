@@ -18,8 +18,28 @@ Web Audio vs HTML5 Audio!
 
 ## See Also
 
+edit MDN - the ended media even is not listed in reference!!! nor pause method
+
+* [HTMLMediaElement Interface](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement) for controlling audio!
+* [HTMLAudioElement Interface](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement)
+* HTML Media API?
+* [MediaStreamTrack Interface](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack)
+
 * [howler.js](https://howlerjs.com/)
 * [waud.js](http://www.waudjs.com/)
 * [Pizzicato](https://alemangui.github.io/pizzicato/)
 * [annyang](https://www.talater.com/annyang/) speech recognition
 * [Buzz](http://buzz.jaysalvat.com/)
+
+## HTMLMediaElement
+
+including HTMLAudioElement and HTMLVideoElement
+
+methods:
+
+play()
+pause()
+
+callbacks:
+
+ended

@@ -4,6 +4,8 @@
 * [[Web Storage]](web-storage)
 * [[Web Audio API]](web-audio-api)
 * [[Web Storage]](web-storage)
+* Blob
+* Web Workers
 
 
 ## Graphics
