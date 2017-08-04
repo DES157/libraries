@@ -8,8 +8,8 @@ Derived from [here](https://firebase.google.com/docs/database/) and:
 * [firebase.database](https://firebase.google.com/docs/reference/js/firebase.database)
 * [firebase.database.Reference](https://firebase.google.com/docs/reference/js/firebase.database.Reference)
 
-    // Get a reference to the database service
-    var database = firebase.database();
+        // Get a reference to the database service
+        var database = firebase.database();
 
 Get reference using `ref()`
 
@@ -22,20 +22,28 @@ Get reference using `ref()`
     //var rootRef = firebase.database().ref();
     //var adaRef = rootRef.child("users/ada");
 
+### Data?
 
+You del in references and they store JSON objects...
+Or lists (with `push()`)
 
-##### Removing data
+name/value pairs
+comma separated
+curly braces for objects
+brackets for arrays
 
-* remove()
+firebase stores arrays as lists (collections) of objects with integer key names
+
 
 
 ### Writing to Database
 
 ##### Adding to database
 
-* push()
+* push() - creates a unique key
 * set() - set overwrites all data at path, including children
 * update()
+* transaction() - atomically modify data
 
 Examples
 
@@ -73,35 +81,41 @@ or if working with lists (see https://firebase.google.com/docs/database/web/list
     
     return firebase.database().ref().update(updates);
 
+##### Removing data
 
-
-remove!
+* remove()
 
 ### Reading from Database
 
 
 ##### Reading data
 
-* on() - event handler, can specify events!
-* off() - detaches callback
-* once() - one time event handler!
+* `on()` - event handler, can specify events!
+* `off()` - detaches callback
+* `once()` - one time event handler!
 
+Can use Promises with `once()` by appending `.then()` otherwise may be asynchronous. See https://firebase.googleblog.com/2016/01/keeping-our-promises-and-callbacks_76.html
+
+Events:
 
 * `child_added`
 * `child_changed`
 * `child_removed`
 * `child_moved`
-* `value`
+* `value` - snapshot contains entire list
 
 key, val()
+
+forEach()
+...
 
 
 ### Manipulating Data
 
-(all involve `Query` class).
+Sorting generates `Query` object:
 
 * `orderByKey`
-* `orderByChild`
+* `orderByChild(path)`
 * `orderByValue`
 
 Filtering:
@@ -187,4 +201,8 @@ Methods:
 #### Misc
 
 how to structure databases?
+
+https://firebase.googleblog.com/2014/04/best-practices-arrays-in-firebase.html
+
+Be 
 
