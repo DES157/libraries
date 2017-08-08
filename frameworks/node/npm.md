@@ -1,6 +1,5 @@
 # NPM
 
-
 ## Using npm
 
 Npm packages can be installed either *locally* or *globally*. Npm defaults to installing packages locally, i.e. in a `node_modules` directory in your current directory. Use the `-g` flag to install globally.
@@ -48,7 +47,7 @@ Packages that you will `require()` should be installed locally, but binary packa
 
 ###### list installed packages
 
-    nmp ls [-g]
+    npm ls [-g]
     npm list -g --depth=0  # just the top level ones you installed
 
 ###### installing globally
@@ -85,7 +84,7 @@ You can link a global package to be available locally using `npm link <package>`
 
 ###### update npm
 
-This is the new and preferred way, as shown [here](https://docs.npmjs.com/getting-started/installing-node).
+This is the new and preferred way, as shown [here](https://docs.npmjs.com/getting-started/installing-node) and [here](https://docs.npmjs.com/troubleshooting/try-the-latest-stable-version-of-npm).
 
     npm install npm@latest -g
 

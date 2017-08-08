@@ -1,20 +1,13 @@
-# NVM
+# Node Version Manager (nvm)
 
-##### Install nvm with Brew
+* [nvm (GitHub)](https://github.com/creationix/nvm)
 
-First create `~/.nvm`, then:
 
-    brew install nvm
-    export NVM_DIR=~/.nvm
-    source $(brew --prefix nvm)/nvm.sh
-
-Now you can install node as discussed [below](#Using_nvm). Check, but I believe manually exporting and and sourcing only need to be done if you wish to use nvm in the current session. Should happen automatically 
 
 
 ## Using nvm
 
 Nvm modifies paths to switch versions!
-
 
 ###### alternatives to nvm
 
@@ -27,9 +20,19 @@ Nvm modifies paths to switch versions!
 
 ### Installing nvm on OS X
 
-1. Install via Homebrew (see above). Probably a good option, and also conveniently installs the bash completions.
+1. Install via Homebrew (see below). Probably a good option, and also conveniently installs the bash completions.
 2. The [`nvm`](https://github.com/creationix/nvm) GitHub page describes how to install by cloning the repo, or with a script that does it for you and installs to `~/.nvm`.
 3. `nvm` can also be installed with `npm` as show [here](https://www.npmjs.com/package/nvm). Advantages unclear.
+
+##### Install nvm with Brew
+
+First create `~/.nvm`, then:
+
+    brew install nvm
+    export NVM_DIR=~/.nvm
+    source $(brew --prefix nvm)/nvm.sh
+
+Now you can install node as discussed [below](#Using_nvm). Check, but I believe manually exporting and and sourcing only need to be done if you wish to use nvm in the current session. Should happen automatically 
 
 
 ### nvm Quickstart
@@ -60,7 +63,8 @@ Note: set the `default` alias to the new version
 
     nvm install node --reinstall-packages-from=node
 
-Note: `--reinstall-packages-from` uses `nvm reinstall-packages`, also there is trickery so this should work even if your current version is not the latest)
+* `--reinstall-packages-from` uses `nvm reinstall-packages`
+* There is trickery so this should work even if your current version is not the latest (see [here](https://github.com/creationix/nvm#migrating-global-packages-while-installing)).
 
 ###### uninstall a version
 
@@ -77,7 +81,6 @@ Look into `.nvmrc`. Note some version managers (including avn and nodenv, but no
 ###### activate an installed version
 
     nvm use <version>
-
 
 ###### display node version currently in use
 

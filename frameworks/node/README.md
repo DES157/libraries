@@ -1,5 +1,6 @@
 # Node.js
 
+
 ## Links
 
 - [Node.js Homepage](https://nodejs.org/)
@@ -12,9 +13,10 @@
 - [Understanding npm](https://unpm.nodesource.com/) - slick intro!
 - [Node.js Lessons @ egghead](https://egghead.io/technologies/node)
 
-## Installation
 
-##### OS X
+## Installing Node
+
+### OS X
 
 - [What is the suggested way to install brew, node.js, io.js, nvm, npm on OS X?](https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
 
@@ -26,7 +28,7 @@
 - [Fixing npm On Mac OS X for Homebrew Users](https://gist.github.com/DanHerbert/9520689)
 - [How to use npm global without sudo on OSX](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/)
 
-##### Install Node with Brew
+#### Installing Node with Homebrew
 
 ###### TL;DR
 
@@ -53,7 +55,6 @@ There were issues with homebrew npm updating itself but they seem to be fixed, t
 
 The best bet is probably to install node through [nvm](nvm)!
 
-----------------------------------------
 
 ## Using Node
 
@@ -61,3 +62,14 @@ Exit [REPL](https://nodejs.org/api/repl.html) Terminal (Read-Eval-Print-Loop) by
 
 `require()`?
 
+
+## Etc
+
+* [[nvm]](nvm) is a slick way to install node and manage versions
+* [[NPM]](npm) is used to manage packages
+
+### Other Package Managers
+
+* [Yarn](https://yarnpkg.com/en/)
+* [webpack](https://webpack.js.org/)
+* [Bower](https://bower.io/) in wide use but on its way out
