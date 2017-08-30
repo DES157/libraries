@@ -5,6 +5,8 @@
 
 - [jQuery](https://jquery.com)
 
+See also [cheerio.js](https://github.com/cheeriojs/cheerio) is like jQuery for the server
+
 ##### Plugins
 
 - [jQueryUI](https://jqueryui.com)
@@ -64,6 +66,14 @@ Working with [dimensions](http://www.w3schools.com/jquery/jquery_dimensions.asp)
 Compare to `.css("width")`
 
 See also [`.position()`](https://api.jquery.com/position/) and [`.offset()`](https://api.jquery.com/offset/)
+
+##### Ajax
+
+* `$.ajax()`
+* `$.load()`
+* `$.get()`
+* `$.post()`
+* getJSON?
 
 ### Etc
 
