@@ -19,6 +19,8 @@ push/popMatrix()+push/popStyle() | push()/pop()
 
 [createImage()](https://p5js.org/examples/image-create-image.html)
 
+Check but loadPixels is different in p5!? Each channel is its own index?
+
 
 #### Modes
 

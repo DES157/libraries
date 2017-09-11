@@ -2,6 +2,8 @@
 
 * Angular
 * React
+* Ember
+* Vue
 
 ##### Web frameworks
 
