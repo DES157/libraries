@@ -1,7 +1,6 @@
-Material Design Lite
-====================
+# Material Design Lite
 
-- [Material Design Lite](https://getmdl.io/)
+* [Material Design Lite](https://getmdl.io/)
 
 ## Templates
 
@@ -11,7 +10,6 @@ Material Design Lite
 4. Portfolio
 5. Text-heavy webpage
 6. Stand-alone article
-
 
 ## Components
 
