@@ -44,6 +44,7 @@
 
 * [Two.js](http://jonobr1.github.io/two.js/)
 * [Toxiclibs.js](http://haptic-data.com/toxiclibsjs) looks interesting!
+* [Particulate.js](https://particulatejs.org/) particle physics
 
 ## Creative
 
