@@ -31,9 +31,8 @@
 
 ## Visualization
 
-* [D3.js](http://d3js.org/)
-    * [D3 Lessons @egghead](https://egghead.io/technologies/d3)
 * [Three.js](three.js)
+* [D3.js](d3.js)
 
 * [Paper.js](http://paperjs.org/about/) - vector graphics on HTML5 Canvas
 * [Raphaël](http://raphaeljs.com/) - vector graphics
