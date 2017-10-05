@@ -1,5 +1,9 @@
 # NPM
 
+To list npm *packages* (has `package.json`)/*modules* (can be loaded by `require()`, most packages are modules):
+
+    npm ls --depth=0
+
 ## Using npm
 
 Npm packages can be installed either *locally* or *globally*. Npm defaults to installing packages locally, i.e. in a `node_modules` directory in your current directory. Use the `-g` flag to install globally.
@@ -15,6 +19,7 @@ Node seems to use `/usr/local`, which is why coexistence with brew can be tricky
 * [npmsearch](https://npmsearch.com/)
 * [browsenpm](http://browsenpm.org/)
 * [browsenpm help](http://browsenpm.org/help)
+* [node-modules](http://node-modules.com/)
 
 ###### howto
 
