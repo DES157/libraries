@@ -7,6 +7,7 @@
 
 ## CDN
 
+* [cdnjs](https://cdnjs.com/libraries) - a nice CDN (Content Deliver Network) that hosts lots of javascript libraries
 * [unpkg](https://unpkg.com/#/) / CDN for everything on npm
 
 ## Etc
@@ -15,9 +16,9 @@
 
 # Cool JavaScript Libraries
 
-## Links
+* [RequireJS](http://requirejs.org/)
 
-* [cdnjs](https://cdnjs.com/libraries) - a nice CDN (Content Deliver Network) that hosts lots of javascript libra
+## Links
 
 ##### Online Playgrounds
 
@@ -44,6 +45,7 @@
 * [Two.js](http://jonobr1.github.io/two.js/)
 * [Toxiclibs.js](http://haptic-data.com/toxiclibsjs) looks interesting!
 * [Particulate.js](https://particulatejs.org/) particle physics
+* [Springy.js](http://getspringy.com/) - force directed graph layout algorithm
 
 ## Creative
 
@@ -78,6 +80,13 @@
 #### Misc
 
 * [Grunt](http://gruntjs.com/) - task runner for automation
+
+## Templates
+
+* [Mustache](https://mustache.github.io/)
+* [handlebars](http://handlebarsjs.com/)
+
+See also [An Overview of JavaScript Templating Engines](https://www.sitepoint.com/overview-javascript-templating-engines/)
 
 ## Related Web Technologies
 
