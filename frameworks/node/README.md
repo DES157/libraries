@@ -1,41 +1,43 @@
 # Node.js
 
+* [[nvm]](nvm) is a slick way to install node and manage versions
+* [[npm]](npm) is used to manage packages
 
 ## Links
 
-- [Node.js Homepage](https://nodejs.org/)
-- [Node Beginner Book](http://www.nodebeginner.org/)
-- [How To Node](http://howtonode.org/)
-- [Grunt.js](http://gruntjs.com/)
+* [Node.js Homepage](https://nodejs.org/)
+* [Node Beginner Book](http://www.nodebeginner.org/)
+* [How To Node](http://howtonode.org/)
+* [Grunt.js](http://gruntjs.com/)
 
 ##### Learning
 
-- [Understanding npm](https://unpm.nodesource.com/) - slick intro!
-- [Node.js Lessons @ egghead](https://egghead.io/technologies/node)
+* [Understanding npm](https://unpm.nodesource.com/) - slick intro!
+* [Node.js Lessons @ egghead](https://egghead.io/technologies/node)
 
 
 ## Installing Node
 
 ### OS X
 
-- [What is the suggested way to install brew, node.js, io.js, nvm, npm on OS X?](https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
+* [What is the suggested way to install brew, node.js, io.js, nvm, npm on OS X?](https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
 
 ###### OSX Links May be superfluous and delete
 
-- [Homebrew installed npm can't upgrade itself](https://github.com/Homebrew/homebrew/issues/22408)
-- [Error: Refusing to delete: /usr/local/bin/npm](https://github.com/npm/npm/issues/3794)
-- [What is the suggested way to install brew, node.js, io.js, nvm, npm on OS X?](https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
-- [Fixing npm On Mac OS X for Homebrew Users](https://gist.github.com/DanHerbert/9520689)
-- [How to use npm global without sudo on OSX](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/)
+* [Homebrew installed npm can't upgrade itself](https://github.com/Homebrew/homebrew/issues/22408)
+* [Error: Refusing to delete: /usr/local/bin/npm](https://github.com/npm/npm/issues/3794)
+* [What is the suggested way to install brew, node.js, io.js, nvm, npm on OS X?](https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x)
+* [Fixing npm On Mac OS X for Homebrew Users](https://gist.github.com/DanHerbert/9520689)
+* [How to use npm global without sudo on OSX](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/)
 
 #### Installing Node with Homebrew
 
 ###### TL;DR
 
-- Install `nvm` with brew, then install node with nvm.
-- Update nvm with brew.
-- Update node with nvm.
-- Update npm with `npm install -g npm@latest`
+* Install `nvm` with brew, then install node with nvm.
+* Update nvm with brew.
+* Update node with nvm.
+* Update npm with `npm install -g npm@latest`
 
 ###### Long Winded Answer
 
@@ -64,9 +66,6 @@ Exit [REPL](https://nodejs.org/api/repl.html) Terminal (Read-Eval-Print-Loop) by
 
 
 ## Etc
-
-* [[nvm]](nvm) is a slick way to install node and manage versions
-* [[NPM]](npm) is used to manage packages
 
 ### Other Package Managers
 
