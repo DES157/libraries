@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Title Here</title>
+    <!-- <link rel="stylesheet" href="css/some-stylesheet.css"> -->
+    <style>
+    /*    body {
+        background-color: blue;
+    }*/
+    </style>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <!--     <p>4</p>
+    <p>5</p>
+    <p>6</p>
+    <p>7</p>
+    <p>8</p>
+    <p>9</p> -->
+    <script>
+    // d3.selectAll("p").style("color", function(d, i) {
+    //     return i % 2 ? "#ffffff" : "#000000";
+    // });
+
+    d3.selectAll("p")
+        .data([4, 8, 15, 16, 23, 42])
+    // .style("font-size", function(d) { return d + "px"; });
+    d3.selectAll("p")
+        .style("font-size", function(d) { return d + "px"; });
+
+
+    d3.selectAll("p")
+        .data([4, 8, 15, 16, 23, 42]);
+        .enter().append("p")
+        .text(function(d) { return "I’m number " + d + "!"; });
+    </script>
+</body>
+
+</html>

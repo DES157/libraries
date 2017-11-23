@@ -92,3 +92,10 @@ See also [An Overview of JavaScript Templating Engines](https://www.sitepoint.co
 
 * [Getting Started with Web Audio API](http://www.html5rocks.com/en/tutorials/webaudio/intro/)
 * [Introducing WebSockets](http://www.html5rocks.com/en/tutorials/websockets/basics/)
+
+## Documentation
+
+* [JSDoc](http://usejsdoc.org/) the juggernaut, but others may be more current
+* [ESDoc](https://esdoc.org/) supports JSDoc syntax
+* [documentation.js](http://documentation.js.org/) looks nice, supports JSDoc syntax
+* [Doclets](https://doclets.io/) looks interesting

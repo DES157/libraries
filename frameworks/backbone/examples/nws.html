@@ -12,6 +12,7 @@
 
 <body>
     <header>Backbone Example</header>
+    <ul id="station-list"></ul>
     <script>
     // var PointModel = Backbone.Model.extend({
     //     url: 'https://api.weather.gov/points/39.0693,-94.6716',
@@ -49,7 +50,7 @@
     var StationModel = Backbone.Model.extend({
         urlRoot: 'https://api.weather.gov/stations',
         initialize: function(attributes, options) {
-            console.log("Initialize StationModel!", this.id);
+            // console.log("Initialize StationModel!", this.id);
             // console.log("this", this);
             // console.log("url()", this.url());
         },
@@ -62,12 +63,33 @@
     });
 
     // sets initial value of id in attributes hash, is copied into model as direct property 
-    //var station = new StationModel({ id: 'KEDU' });
-    // station.fetch().then(function() {
-    //     console.log("Fetch StationModel!", station.id);
-    //     console.log("station.url()", station.url());
-    //     console.log("station", station);
-    // });
+    var station = new StationModel({ id: 'KEDU' });
+    station.fetch().then(function() {
+        console.log("Fetch StationModel!", station.id);
+        console.log("station.url()", station.url());
+        console.log("station", station);
+    });
+
+    var StationsListItemView = Backbone.View.extend({
+        tagName: 'li',
+        className: 'station',
+
+        initialize: function() {
+            console.log("Initialize StationsListItemView!");
+            this.listenTo(this.model, 'sync change', this.render);
+            this.model.fetch();
+            this.render();
+            console.log(this);
+        },
+
+        render: function() {
+            var html = this.model.name;
+            this.$el.html(html);
+            return this;
+        }
+    });
+
+    var stationsItem = new StationsListItemView({ model: station });
 
     /*
      * The /points/{point}/stations endpoint returns an array of stations in features[]
@@ -105,6 +127,36 @@
         // fetches eash station individually if you want the extra information
         //_.each(station.models, function(element, index, list) { element.fetch() });
     });
+
+    var StationsListView = Backbone.View.extend({
+        // el: '#station-list',
+        tagName: 'ul',
+        className: 'stations',
+
+        initialize: function() {
+            console.log("Initialize StationsViewList!");
+            // this.listenTo(this.collection, 'add remove reset sync change', this.render);
+            this.listenTo(this.collection, 'update', this.render);
+            this.collection.fetch();
+            this.render();
+        },
+
+        render: function(event) {
+            console.log("Event", event);
+            console.log("Render StationsViewList!", this.collection);
+
+            this.$el.empty();
+            this.collection.each(function(model) {
+                // var item = new MuppetsListItemView({ model: model });
+                // $list.append(item.render().$el);
+                var html = '<li>' + model.attributes.properties.name + '</li>';
+                this.$el.append(html);
+            }, this);
+            return this;
+        }
+    });
+
+    var stationsList = new StationsListView({ collection: stations });
     </script>
 </body>
 
