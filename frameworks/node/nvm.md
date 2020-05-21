@@ -22,7 +22,6 @@ Nvm modifies paths to switch versions!
 
 1. Install via Homebrew (see below). Probably a good option, and also conveniently installs the bash completions.
 2. The [`nvm`](https://github.com/creationix/nvm) GitHub page describes how to install by cloning the repo, or with a script that does it for you and installs to `~/.nvm`.
-3. `nvm` can also be installed with `npm` as show [here](https://www.npmjs.com/package/nvm). Advantages unclear.
 
 ##### Install nvm with Brew
 
