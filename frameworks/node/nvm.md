@@ -71,7 +71,7 @@ Note: set the `default` alias to the new version
 
 ##### Managing versions
 
-Look into `.nvmrc`. Note some version managers (including avn and nodenv, but not nvm) support `.node-version` file (akin to `.ruby-version`).
+The default Node version in a directoy may be specified by a `.nvmrc` file in that directory (or any parent directory), but this does not change the Node version automatically---it only sets the default version used by nvm commands. The nodenv version manager can automatically switch your Node version when changing directories according to a `.node-version` file (akin to `.ruby-version`). Similar behavior can be achived with nvm (and other version managers) through the use of [avn](https://github.com/wbyoung/avn).
 
 ###### list installed versions
 
